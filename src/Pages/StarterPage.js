@@ -7,7 +7,7 @@ function StarterPage() {
         <div>
             <img src={logo}></img>
             <h1>WELCOME</h1>
-            <p>We help Students/users share informations,resources ask queries and make learning easier in certain ways!!</p>
+            <p>We help Students/users share informations, resources ask queries and make learning easier in certain ways!!</p>
             <Link to="/login">LOGIN</Link>
             <Link>SIGNUP</Link>
         </div>
