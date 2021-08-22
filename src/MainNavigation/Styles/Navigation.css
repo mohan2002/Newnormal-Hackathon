@@ -1,4 +1,131 @@
-div{
-    /* font-family: 'Lato', sans-serif; */
-font-family: 'Montserrat', sans-serif;
+.navbar{
+    background-color: crimson;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0px 15px 15px -15px rgb(167, 12, 43);
 }
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.log{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.nav-logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+.nav-logo h1{
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.nav-menu
+{
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.nav-links{
+ color: white;
+ text-decoration: none;
+ padding: 0.5rem 1rem;
+ height: 100%;
+ box-shadow: 3px solid transparent;  
+ font-size: 1rem;
+ font-weight: 600; 
+}
+
+.nav-items{
+    line-height: 40px;
+    margin-right: 1rem;
+}
+.nav-links:hover{
+    color: black;
+}
+.btn{
+    border: none;
+    width: 90px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+.btn:active{
+    background-color: gray;
+}
+
+.nav-icon{
+    display: none;
+}
+
+@media all and (max-width:800px){
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+    }
+    .nav-menu.active{
+        background: crimson;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-items{
+        padding: 5px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .btn{
+        width: 95%;
+    }
+
+    .nav-icon{
+        display: block;
+        margin-right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+
+
+
+
