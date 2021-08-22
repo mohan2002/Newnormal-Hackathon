@@ -1,6 +1,7 @@
 import React from 'react'
 import { useAuth } from './Context/AuthContext'
 import {useHistory} from 'react-router-dom'
+import Navigation from '../MainNavigation/Navigation'
 function Homepage() {
     const{currentUser,logout} = useAuth()
     const history = useHistory()
@@ -16,6 +17,7 @@ function Homepage() {
     {currentUser && console.log(currentUser)}
     return (
         <div>
+            <Navigation/>
             <button onClick={logoutuser}>Logout</button>
         </div>
     )
