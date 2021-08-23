@@ -1,0 +1,66 @@
+.partition{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.left{
+
+    width: 40%;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3eff9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a17676' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");    
+
+}
+
+.head{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.frst{
+    width: 80%;
+    flex: 0.7;
+}
+.second{
+    width:80%;
+}
+
+.frst-content{
+    list-style-type: decimal;
+    padding: 20px;
+}
+
+.second-content{
+    list-style-type: decimal;
+    padding: 20px;
+}
+
+.frst-content li{
+    margin-bottom: 10px;
+}
+.second-content li{
+    margin-bottom: 10px;
+}
+
+@media all and (max-width:800px){
+    .partition{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+.right{
+    width: 60%;
+}

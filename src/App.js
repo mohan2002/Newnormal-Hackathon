@@ -7,6 +7,7 @@ import PrivateRoute from './Pages/Context/PrivateRouter';
 import Querypage from './Pages/Queypage'
 import DiscussionPage from './Pages/DiscussionPage'
 import About from './Pages/About';
+import Addposts from './Pages/Addposts'
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
             <Route path ="/query" component={Querypage}/>
             <Route path="/discussion" component={DiscussionPage}/>
             <Route path="/about" component={About}/>
+            <Route path="/add" component={Addposts}/>
             <PrivateRoute path="/homepage" component={Homepage}/>
          </Switch>
          </AuthProvider>

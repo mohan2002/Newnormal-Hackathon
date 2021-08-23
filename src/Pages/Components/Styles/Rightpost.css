@@ -1,0 +1,60 @@
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkcyan; */
+}
+
+.form div{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.date_time
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+Datetime{
+    display: block;
+}
+label{
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+input{
+    padding: 4px;
+    width: 200px;
+    border: none;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+textarea{
+    height: 50px;
+}
+
+.btn1{
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(166, 194, 194);
+    padding: 10px;
+    width: 100px;
+}
+
+.text-area{
+    display: inline-flex;
+    align-items: center;
+}
+
+.h1{
+    text-align: center;
+}

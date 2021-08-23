@@ -1,5 +1,6 @@
 .navbar{
-    background-color: crimson;
+    background-color: #f1f1f1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a17676' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");    
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,8 +9,8 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    font-family: 'Lato', sans-serif;
-    box-shadow: 0px 15px 15px -15px rgb(167, 12, 43);
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px 10px 10px -15px black;
 }
 
 .nav-container{
@@ -28,7 +29,7 @@
 }
 
 .nav-logo{
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     align-items: center;
@@ -52,7 +53,7 @@
 }
 
 .nav-links{
- color: white;
+ color: black;
  text-decoration: none;
  padding: 0.5rem 1rem;
  height: 100%;
@@ -65,26 +66,65 @@
     line-height: 40px;
     margin-right: 1rem;
 }
+
+.line{
+    border-bottom: 2px solid rgb(16, 218, 218);
+}
+
 .nav-links:hover{
-    color: black;
+    color: rgb(219, 207, 207);
 }
 .btn{
     border: none;
-    width: 90px;
     margin-left: 20px;
-    border-radius: 10px;
     font-weight: 700;
+    background-color: rgb(245, 245, 245);
 }
 
-.btn:hover{
-    background-color: rgb(207, 207, 207);
-}
 
+.settings:active,
 .btn:active{
-    background-color: gray;
+    background-color: rgb(245, 245, 245);
 }
 
 .nav-icon{
+    display: none;
+}
+
+.settings{
+    font-family: 'Lato', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.3rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    top: 70px;
+    position: absolute;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    left: 88%;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 212, 212);
+}
+.a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+}
+.a:hover{
+    background-color: rgb(228, 217, 217);
+}
+.hide{
     display: none;
 }
 
@@ -99,7 +139,7 @@
         opacity: 1;
     }
     .nav-menu.active{
-        background: crimson;
+        background:#ffffff;
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -112,16 +152,30 @@
         align-items: center;
     }
 
-    .btn{
-        width: 95%;
-    }
 
     .nav-icon{
         display: block;
         margin-right: 20px;
         font-size: 2rem;
         cursor: pointer;
-        color: white;
+        color:  blue;
+    }
+    .settings{
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .settings svg{
+        font-size: 2rem;
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+    .dropdown-content{
+        position: absolute;
+        top: 350px;
+        left: 38%;
     }
 }
 
