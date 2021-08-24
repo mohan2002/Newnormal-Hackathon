@@ -1,60 +1,53 @@
 
 .form{
     display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-width: 100px;
+  min-height: 400px;
+  padding: 10px 30px 20px 20px;
+  border-radius: 6px;
+  background-color: #fefefe;
+}
+
+
+.form > div {
+    margin: 0.5em 0;
+  }
+
+  input {
+    display: flex;
     flex-direction: column;
-    padding:10px;
-    max-width: 900px;
+    width: 100%;
+    padding: 5px;
+  }
+  textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn1 {
+    min-width: 100%;
+    cursor: pointer;
+    margin-right: 0.25em;
+    margin-top: 0.5em;
+    padding: 	0.938em;
+    border: none;
+    border-radius: 4px;
+    background-color: #22223B;
+    color: #fefefe;
+  }
+  .btn1:hover {
+    background-color: #4A4E69;
+    color: #fefefe;
+  }
+  
+
+.center{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: darkcyan; */
-}
-
-.form div{
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.date_time
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-Datetime{
-    display: block;
-}
-label{
-    font-size: 1rem;
-    margin-right: 20px;
-}
-
-input{
-    padding: 4px;
-    width: 200px;
-    border: none;
-    background-color: #f7f7f7;
-    border-bottom: 2px solid grey;
-    outline: none;
-}
-
-textarea{
-    height: 50px;
-}
-
-.btn1{
-    margin-top: 10px;
-    border: none;
-    background-color: rgb(166, 194, 194);
-    padding: 10px;
-    width: 100px;
-}
-
-.text-area{
-    display: inline-flex;
-    align-items: center;
-}
-
-.h1{
     text-align: center;
 }
