@@ -31,6 +31,7 @@ function Queypage() {
     return (
         <div className="query-container">
             <Navigation/>
+            <h1>HELLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOO</h1>
             <input type="text" ref={inputref}/>
             <button onClick={sb}>submit</button>
 
