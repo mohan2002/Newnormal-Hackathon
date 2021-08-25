@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .navbar{
-    background-color: #f1f1f1;
+    background-color:rgba(73,143,221,255);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a17676' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");    
     height: 80px;
     display: flex;
@@ -9,7 +11,8 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+   
     box-shadow: 0px 10px 10px -15px black;
 }
 
@@ -25,10 +28,12 @@
 .log{
     height: 50px;
     width: 50px;
+    display: none;
     object-fit: cover;
 }
 
 .nav-logo{
+    
     color: black;
     display: flex;
     align-items: center;
@@ -41,6 +46,8 @@
 }
 .nav-logo h1{
     margin-left: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -53,7 +60,7 @@
 }
 
 .nav-links{
- color: black;
+ color: #ffffff;
  text-decoration: none;
  padding: 0.5rem 1rem;
  height: 100%;
@@ -92,14 +99,19 @@
 }
 
 .settings{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto mono', sans-serif;
     display: inline-flex;
     align-items: center;
     padding: 5px;
     font-size: 1.3rem;
     background-color: rgb(245, 245, 245);
+    
     border-radius: 10px;
     cursor: pointer;
+}
+
+.settings button{
+    color: rgba(73,143,221,255);
 }
 
 .dropdown-content{
@@ -116,7 +128,7 @@
 }
 .a{
     text-decoration: none;
-    color: black;
+    color: rgba(73,143,221,255);
     font-weight: 600;
     margin-top: 10px;
     padding: 10px;
@@ -178,8 +190,3 @@
         left: 38%;
     }
 }
-
-
-
-
-
