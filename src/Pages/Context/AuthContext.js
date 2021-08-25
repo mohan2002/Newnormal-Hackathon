@@ -33,7 +33,6 @@ export default function AuthProvider({children}) {
         const GithubProvider = new firebase.auth.GithubAuthProvider();
         return firebase.auth().signInWithPopup(GithubProvider).then((res)=>{
             return res.user;
-            console.log(res.user);
         }) 
         .catch((er) => {
             return er;

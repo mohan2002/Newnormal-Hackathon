@@ -13,7 +13,6 @@ function LeftCard() {
         }
     },[currentUser])
     
-    console.log(user);
     return (
         <div className="container">
             <div className="bio">
