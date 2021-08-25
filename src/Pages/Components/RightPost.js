@@ -17,8 +17,21 @@ import "@reach/combobox/styles.css";
 import firebase,{firestore} from '../Context/firebase/firebase'
 import { useAuth } from '../Context/AuthContext';
 import {useHistory} from "react-router-dom"
+import  BarLoader from "react-spinners/BarLoader";
+import moment from 'moment';
+
+
 function RightPost() {
     
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() =>{
+        setTimeout(() =>{
+            setLoading(false)
+        },4000)
+    },[loading])
+
+
     const [ImageUrl,setImageUrl] = useState(null)
     const [selectedDate,handleDateChange] = useState(new Date())
     const {currentUser} = useAuth()
@@ -37,9 +50,11 @@ function RightPost() {
     const categoryref = useRef()
     const eventref = useRef()
     const descref = useRef()
+    const linkref = useRef()
 
     async function post(e){
         e.preventDefault();
+        setLoading(true)
         const id = firebase.firestore().collection('postsDatabase').doc().id
        await firestore.collection("postsDatabase").doc(id).set({
            timeStamp:firebase.firestore.FieldValue.serverTimestamp(),
@@ -51,10 +66,11 @@ function RightPost() {
            EventName:eventref.current.value,
            Eventcategory:categoryref.current.value,
            Description:descref.current.value,
-           EventDate:selectedDate,
+           EventLink:linkref.current.value,
+           EventDate:moment(selectedDate).format('MMMM Do YYYY, h:mm:ss a'),
        })
+      
        history.push("/homepage")
-
     }
 
     const filechangehandler = async (e) => {
@@ -67,7 +83,13 @@ function RightPost() {
     }
     
     return (
-        <div>
+        <div className={loading && "holder"}>
+            {
+                loading ?  <BarLoader color={"black"} loading={loading} size={20} width="200"/>
+
+                :
+
+            
           <form className="form" onSubmit={post}>
             <div>
                 <label>Name:
@@ -117,7 +139,7 @@ function RightPost() {
                     <ComboboxOption value="Python" />
                     <ComboboxOption value="Algorithms" />
                     <ComboboxOption value="Coding contest" />
-                    <ComboboxOption value="Mechanical Engineering oriented" />
+                    <ComboboxOption value="Mech" />
                     <ComboboxOption value="Datascience" />
                     <ComboboxOption value="AI/ML" />
                     <ComboboxOption value="UI/UX" />
@@ -134,6 +156,9 @@ function RightPost() {
             </div>
             
             <div className="text-area">
+                <label>Event Link: 
+                    <input type="text" ref={linkref}/>
+                </label>
                 <label>Description:
                     <textarea ref={descref} required/>
                 </label>
@@ -142,7 +167,8 @@ function RightPost() {
            
             <button className="btn1">Post</button>
             </form>  
-
+        
+        } 
         </div>
     )
 }

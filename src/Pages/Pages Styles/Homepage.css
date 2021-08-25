@@ -1,0 +1,28 @@
+.part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-card
+{
+    width: 30%;
+}
+.right-card{
+    width: 70%;
+}
+
+@media all and (max-width:800px){
+    .part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-card{
+        width: 100%;
+        display: none;
+    }
+    .right-card{
+        width: 100%;
+    }
+}
