@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+Body{
+    background-color: #f7f7f7;
+    background-size:cover; 
+    max-width: 1440px;
+    font-family: 'Lato', sans-serif;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.col1{
+    flex: 50%;
+    max-width: 18cm; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13cm;   
+    background-color:rgba(73,143,221,255);
+    background-size: cover ;
+    background-position: center;
+    padding: 35px;
+    justify-content: center;
+    border-right:px whitesmoke solid ;;
+    
+   
+}
+
+
+.imgbx{
+      background-image: url("../Images/header.gif");
+      background-size: 90%;
+      background-position: center;
+        width: 670px;
+        height: 300px;
+
+}
+
+.imgbx1{
+    background-image: url("../Images/header2.gif");
+    background-size: 170%;
+    background-position: center;
+      width: 700px;
+      height: 300px;
+
+}
+.imgbx2{
+    background-image: url("../Images/header3.gif");
+   
+    
+
+}
+
+.content{
+          color: #fff;
+          margin-top: 30px;
+  
+}
+.col2{
+    flex: 50%;
+    max-width: 9cm; 
+    display: flex;
+    height: 13cm;   
+    background-color:white;
+    background-size: cover ;
+    background-position: center;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.contentw{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.h{
+   padding-bottom: 70px;
+   text-align: center;
+   padding-right: 0px;
+   color: rgba(73,143,221,255);
+   font-size: 2em;
+   font-family: 'Pacifico', cursive;
+   text-transform: capitalize;
+}
+
+.wel{
+    padding-right: 60px;
+    padding-bottom: 70px;
+    text-align: center;
+    padding-left: 60px;
+    color: rgba(73,143,221,200);
+    font-size: 1.3em;
+    font-style: normal;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.lo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.lo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.ad{
+  
+    background-image: url("../../Images/GitHub-Mark-32px.png") ;
+    padding: 20px;
+    background-position: center ;
+    background-size: 100%;
+    border-radius: 60px;
+}
+
+
+
+.ad1{
+  
+    background-image: url("../../Images/goo.png") ;
+    padding: 20px;
+    background-position: center ;
+    background-size: 100%;
+    border-radius: 60px;
+    border-color: transparent;
+}
+.dd{
+    padding-left: 9px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(73,143,221,40);
+}
+
+.end{
+    margin-left: 40px;
+   margin-top: 80px;
+    color: rgba(73,143,221,40);
+    font-size: 0.5em;
+    text-align: center;
+
+}
+
+.ad:hover{
+    color: rgba(16, 133, 201, 0.815);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.ad1:hover{
+    color: rgba(16, 133, 201, 0.815);
+    opacity: 0.5;
+    cursor: pointer;
+}

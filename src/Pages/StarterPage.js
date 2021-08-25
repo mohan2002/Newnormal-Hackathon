@@ -1,7 +1,8 @@
 import React from 'react'
 import {Link,useHistory} from 'react-router-dom'
-import logo from '../Images/Group 1.png'
 import { useAuth } from './Context/AuthContext'
+import "./Pages Styles/StarterPage.css"
+
 
 function StarterPage() {
     const history = useHistory()
@@ -21,17 +22,59 @@ function StarterPage() {
             history.push("/homepage")
         }
         catch{
-            alert("SORRY")
+            alert("SORRY" )
         }
     }
     return (
-        <div>
-            <img src={logo}></img>
-            <h1>WELCOME</h1>
-            <p>We help Students/users share informations, resources ask queries and make learning easier in certain ways!!</p>
-            <button onClick={GoogleLogin}>Login with Google</button>
-            <button onClick={gitlogin}>Login with Git</button>
-        </div>
+      <div class="row">
+          <div class="col1">
+                 
+                  <div class="imgbx">
+                      
+                  </div>
+                  <div class="content">
+                      <p>
+                      ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ᴀɴᴅ ᴘᴏsᴛ ʏᴏᴜʀ ғᴇᴀᴛᴜʀɪɴɢ ᴀɴᴅ ᴜᴘᴄᴏᴍɪɴɢ ᴇᴠᴇɴᴛs ᴍᴇɴᴛɪᴏɴɪɴɢ ᴛʜᴇ ᴅᴀᴛᴇ ᴀɴᴅ ᴛɪᴍᴇ,ᴡʜɪᴄʜ ᴡɪʟʟ ɢᴇᴛ ᴘᴏsᴛᴇᴅ ɪɴ ᴛʜᴇ ᴘᴏsᴛ ᴘᴀɢᴇ ᴏғ ᴏᴜʀ ᴡᴇʙsɪᴛᴇ
+                      </p>
+                   
+                  </div>
+
+                 
+              
+          </div>
+           <div class="col2">
+               <div class="bgw">
+            
+               </div>
+               <div class="contentw">
+                     <div class="h">
+                         Event Hub
+                     </div>
+                     <div class="wel">
+                     
+                         Welcome to Eventhub
+                     </div>
+                     <div class="lo">
+                     <button class="ad1" onClick={GoogleLogin}></button>
+                     <div class="dd"> LOGIN WITH GOOGLE</div>
+                    
+                     </div>
+                    
+                     <div class="lo">
+                     <button class="ad"  onClick={gitlogin}></button>
+                     <div class="dd"> LOGIN WITH GITHUB</div>
+                    
+                     </div>
+                     
+                    <div class="end">
+                        ENRICH YOUR SKILLSET
+                    </div>
+                     
+               </div>
+           </div>
+      </div>
+        
+       
     )
 }
 
