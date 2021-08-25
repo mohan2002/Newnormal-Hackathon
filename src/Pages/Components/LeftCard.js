@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../Context/AuthContext'
 import  "./Styles/Leftcard.css"
+import Sticky from 'react-sticky-el';
+
 function LeftCard() {
     const {currentUser} = useAuth()
     const [user,setUser] = useState([])

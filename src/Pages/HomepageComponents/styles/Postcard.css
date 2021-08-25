@@ -1,0 +1,181 @@
+.item{
+    width: 50%;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+.banner{
+    height: 60px;
+    background-color: rgb(73, 143, 221,255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.left-bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 0.7rem;
+    align-items: center;
+    width: 60%;
+}
+
+.me{
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+    margin-left: 12px;
+}
+.name-email{
+    margin-left: 5px;
+}
+
+.name-email h1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.name-email p{
+    color: rgb(41, 37, 37);
+}
+
+.right{
+    width: 40%;
+    font-size: 1rem;
+}
+
+.cat{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+
+.Overview{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.event-desc{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.event-name{
+    display: flex;
+    flex-direction: row;
+}
+.n{
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-around;
+}
+
+.link-part{
+    width: 100%;
+    padding: 6px;
+    margin-top: 2px;
+    background-color: rgb(214, 207, 207);
+}
+.link-part a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.like-comment{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.like-comment div{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    background-color: inherit;
+    border:none;
+    outline: none;
+    
+}
+
+
+
+
+.demo{
+    font-size: 1.4rem;
+    color: rgb(126, 111, 111);
+    margin-top: -5px;
+}
+
+.change{
+    color: red;
+}
+
+.change-black{
+    color: rgb(24, 22, 22);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgb(201, 195, 195);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    font-size:1rem;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -40px;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media all and (max-width:800px){
+    .item{
+        width: 80%;
+    }
+}
+
+@media all and (max-width:550px){
+    .item{
+        width: 100%;
+    }
+}
