@@ -72,6 +72,10 @@ function Queypage() {
             <div className="query-container">
             <Navigation/>
 
+            <input type="text" ref={inputref}/>
+            <button onClick={sb}>submit</button>
+
+
                 <div className="query-content">
                     <textarea type="query-txt" ref={inputref} placeholder="Enter your problem to get answer"/>
                     <button onClick={sb} className="query-btn">POST</button>

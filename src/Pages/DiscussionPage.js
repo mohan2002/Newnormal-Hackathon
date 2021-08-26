@@ -5,7 +5,8 @@ function DiscussionPage() {
     return (
         <div>
             <Navigation/>
-            <h1>DiscussionPage</h1>
+            <h1>Discussion Page Modifications</h1>
+            <h1>Sample is Done</h1>
         </div>
     )
 }
