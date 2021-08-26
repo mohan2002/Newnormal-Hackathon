@@ -12,7 +12,7 @@
     top: 0;
     z-index: 20;
     font-family: 'Roboto Mono', monospace;
-   
+   max-width: 100%;
     box-shadow: 0px 10px 10px -15px black;
 }
 

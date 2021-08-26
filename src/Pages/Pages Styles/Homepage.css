@@ -12,11 +12,11 @@
 }
 
 .left-card
-{
-    width: 30%;
+{ 
+   width: 20%;
 }
 .right-card{
-    width: 70%;
+    width: 80%;
 }
 
 @media all and (max-width:800px){
