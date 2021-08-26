@@ -36,7 +36,7 @@ function PostCard({post}) {
                     <div className="top">
                         <div className="event-desc">
                             <div className="event-name">
-                                <p className="n">Event Name  : </p>
+                                <p className="n">Event Name HELLO : </p>
                                 <p className="m">{post.EventName}</p>
                             </div>
                             <div className="event-name">
