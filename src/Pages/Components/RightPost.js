@@ -68,6 +68,7 @@ function RightPost() {
            Description:descref.current.value,
            EventLink:linkref.current.value,
            EventDate:moment(selectedDate).format('MMMM Do YYYY, h:mm:ss a'),
+           like:0,
        })
       
        history.push("/homepage")

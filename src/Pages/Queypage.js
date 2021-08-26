@@ -32,6 +32,7 @@ function Queypage() {
         }
     },[currentUser])
 
+    console.log(user.uid);
     async function sb(){
         const id = firebase.firestore().collection('query-part').doc().id
         await firestore.collection("query-part").doc(id).set({
@@ -72,8 +73,6 @@ function Queypage() {
             <div className="query-container">
             <Navigation/>
 
-            <input type="text" ref={inputref}/>
-            <button onClick={sb}>submit</button>
 
 
                 <div className="query-content">

@@ -9,6 +9,7 @@ import DiscussionPage from './Pages/DiscussionPage'
 import About from './Pages/About';
 import Addposts from './Pages/Addposts'
 import ReplyfromQuery from './Pages/QueryComponent/ReplyfromQuery';
+import ChatRooms from './Pages/DiscussionComponent/ChatRooms';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,9 @@ function App() {
             <Route path="/add" component={Addposts}/>
             <Route path="/replies/:id">
               <ReplyfromQuery/>
+            </Route>
+            <Route path="/chatroom/:id">
+              <ChatRooms/>
             </Route>
             <PrivateRoute path="/homepage" component={Homepage}/>
          </Switch>

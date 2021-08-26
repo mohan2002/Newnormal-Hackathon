@@ -2,23 +2,36 @@ import React, { useState } from 'react'
 import "./styles/Postcard.css"
 import Card from "./Card"
 import me from "../Images/me.png"
+
+import { firestore } from '../Context/firebase/firebase'
+
 import demo from "../Images/demo.jpg"
+
 
 function PostCard({post}) {
     const [like,setLike] = useState(false)
+    const [count,setCount] = useState()
     const [save,setSave] = useState(false)
-    function genereate(){
-        console.log(post.id);
+    const  generate = () => {
+        setLike(true)
+        firestore.collection("postsDatabase").doc(post.id).set({
+            like: post.like + 1
+        }, {merge:true})
+        console.log("clicked");
+    }
+
+    const savePost = () => {
+        console.log("hlo");
     }
 
     return (
-        <li className="item" onClick={genereate}>
+        <li className="item">
             
             <Card>
                 <div className="banner">
                     <div className="left-bio">
                         <div>
-                            <img src={me} className="me"/>
+                            <img src={post.PostedbyImage} className="me"/>
                         </div>
                         <div className="name-email">
                             <h1>{post.PostedbyName}</h1>
@@ -63,11 +76,13 @@ function PostCard({post}) {
                 </div>
 
                 <div className="like-comment">
-                    <div className={like ? "demo tooltip change" : "demo tooltip"} onClick={() => {setLike(!like)}}><i class="fas fa-heart"></i>
+                    <div className={like ? "demo tooltip change" : "demo tooltip"} ><i class="fas fa-heart" onClick={generate}></i>
+                    <span>{post.like}</span>
                     <span className="tooltiptext">{like ? "Liked" : "Like"}</span>
+                   
                     </div>
                     <div className="demo tooltip"><i class="far fa-comment-dots" ></i><span className="tooltiptext">Comment</span></div>
-                    <div className={save ? "demo tooltip change-black" : "demo tooltip"} onClick={() => {setSave(!save)}}><i class="fas fa-bookmark"></i><span className="tooltiptext">{save ? "Saved" : "Save"}</span></div>
+                    <div className={save ? "demo tooltip change-black" : "demo tooltip"} onClick={savePost}><i class="fas fa-bookmark"></i><span className="tooltiptext">{save ? "Saved" : "Save"}</span></div>
                 </div>
            
        

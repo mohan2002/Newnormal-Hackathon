@@ -1,0 +1,49 @@
+.demo-roomss{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(49, 47, 47);
+}
+.demo-room-name{
+    text-align: center;
+}
+
+.demo-rm-nm{
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.demo-created{
+    text-align: center;
+}
+
+.alg{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.demo-created-name{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.demo-created-mail{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.demo-created-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.demo-head{
+    font-size: 1.5rem;
+    font-weight: 800;
+}

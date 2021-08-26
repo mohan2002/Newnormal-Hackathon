@@ -5,14 +5,7 @@ import BarLoader from "react-spinners/FadeLoader";
 
 function RepyDisplay({reply}) {
     
-    const [loading, setLoading] = useState(false)
 
-    useEffect(() =>{
-        setLoading(true)
-        setTimeout(() =>{
-            setLoading(false)
-        },2000)
-    },[])
 
     return (
         <div>
