@@ -2,7 +2,12 @@ import React, { useState } from 'react'
 import "./styles/Postcard.css"
 import Card from "./Card"
 import me from "../Images/me.png"
+
 import { firestore } from '../Context/firebase/firebase'
+
+import demo from "../Images/demo.jpg"
+
+
 function PostCard({post}) {
     const [like,setLike] = useState(false)
     const [count,setCount] = useState()
@@ -44,7 +49,7 @@ function PostCard({post}) {
                     <div className="top">
                         <div className="event-desc">
                             <div className="event-name">
-                                <p className="n">Event Name: </p>
+                                <p className="n">Event Name HELLO : </p>
                                 <p className="m">{post.EventName}</p>
                             </div>
                             <div className="event-name">
@@ -53,19 +58,20 @@ function PostCard({post}) {
                                
                             </div>    
                         </div>
-                        <div className="image">
-                            <img src={post.EventImage1 || post.EventImage2} alt="props.title" className="image"/>
-                        </div>
-                        
-                    </div> 
-                    
-                    <div className="bottom">
                         <div className="a">
                             <p>{post.EventDate}</p>
                         </div>
                         <div className="link-part">
-                            <a className="Link" href={post.EventLink} target="_blank">Link</a>
+                           <button><a className="Link" href={post.EventLink} target="_blank">Link</a></button> 
                         </div>   
+                       
+                        
+                    </div> 
+                    
+                    <div className="bottom">
+                    <div className="image">
+                            <img src={post.EventImage1 || post.EventImage2} alt="props.title" className="image"/>
+                        </div>
                     </div>
                 </div>
 
