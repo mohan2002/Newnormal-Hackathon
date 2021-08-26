@@ -1,6 +1,6 @@
 import './App.css';
 import StarterPage from './Pages/StarterPage';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route,useParams} from 'react-router-dom'
 import AuthProvider from './Pages/Context/AuthContext';
 import Homepage from './Pages/Homepage';
 import PrivateRoute from './Pages/Context/PrivateRouter';
@@ -8,6 +8,7 @@ import Querypage from './Pages/Queypage'
 import DiscussionPage from './Pages/DiscussionPage'
 import About from './Pages/About';
 import Addposts from './Pages/Addposts'
+import ReplyfromQuery from './Pages/QueryComponent/ReplyfromQuery';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
             <Route path="/discussion" component={DiscussionPage}/>
             <Route path="/about" component={About}/>
             <Route path="/add" component={Addposts}/>
+            <Route path="/replies/:id">
+              <ReplyfromQuery/>
+            </Route>
             <PrivateRoute path="/homepage" component={Homepage}/>
          </Switch>
          </AuthProvider>

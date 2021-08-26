@@ -1,0 +1,74 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+}
+
+.display-hero-reply{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+    height: 200px;
+    background-color: rgba(218, 214, 214, 0.61);
+}
+
+.by-left{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.by-right{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+    background-color: rgba(218, 216, 216, 0.671);
+}
+
+
+.by-left-top{
+    height: 35%;
+    background-color: rgb(160, 155, 155);
+    display: flex;
+    flex-direction: row;
+}
+
+.by-left-bottom{
+    padding: 10px;
+    height: 75%;
+}
+
+.by-replied{
+    width: 50%;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.by-bio{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.by-image{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.by-name{
+    font-size: 1.2rem;
+}
+.by-email{
+    font-size: 0.8rem;
+}
