@@ -1,17 +1,5 @@
-.paras{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.para1{
-    border: 2px solid black;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10%;
-}
 .body{
+    background-color: url('https://i.pinimg.com/originals/24/01/9b/24019be315c8dafd0d89e483b3749540.jpg');
     width: 1360px;
     height: 530px;
     display: flex;
@@ -27,67 +15,178 @@
     padding: 2%;
     grid-template-columns: 300px;
     grid-template-rows: 100px 110px;
-    grid-template-areas: "image" "text";
+    grid-template-areas: "button" "image" "text";
     border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background: black;
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.9); */
     text-align: center;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10%;
 }
-.cpara1{
+.card1:hover{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
+}
+.card2:hover{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
+}
+.card3:hover{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
+}
+.card4:hover{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
+}
+.card1:hover > .abt1{
+    opacity: 1;
+}
+.card2:hover > .abt2{
+    opacity: 1;
+}
+.card3:hover > .abt3{
+    opacity: 1;
+}
+.card4:hover > .abt4{
+    opacity: 1;
+}
+.abt1{
+    color: seashell;
+    position: absolute;
+    opacity: 0.5;
+}
+.abt2{
+    color: seashell;
+    position: absolute;
+    opacity: 0.5;
+}
+.abt3{
+    color: seashell;
+    position: absolute;
+    opacity: 0.5;
+}
+.abt4{
+    color: seashell;
+    position: absolute;
+    opacity: 0.5;
+}
+.cbutton1{
+    margin-top: 0%;
+    display: none;
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left:20em;
+    top: 15em;
+}
+.cbutton2{
+    margin-top: 0%;
+    display: none;
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left:20em;
+    top: 18em;
+}
+.cbutton3{
+    margin-top: 0%;
+    display: none;
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left:25em;
+    top: 15em;
+}
+.cbutton4{
+    margin-top: 0%;
+    display: none;
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left:25em;
+    top: 18em;
+}
+.image1{
+    padding: 2%;
+    flex-shrink: 0;
+    /* min-width: 100%;
+    min-height: 100%; */
     display: none;
 }
-.cpara2{
-    display: none;
-}
-.cpara3{
-    display: none;
-}
-.cpara4{
-    display: none;
+.image2{
+    object-fit: cover;
+    min-width: 200px;
+    min-height: 200px;
 }
 .card2{
     display: grid;
     padding: 2%;
     grid-template-columns: 300px;
     grid-template-rows: 100px 110px;
-    grid-template-areas: "image" "text";
+    grid-template-areas: "button" "image" "text";
     border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background: black;
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.9); */
     text-align: center;
-    margin-top: 5%;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .card3{
     display: grid;
     padding: 2%;
     grid-template-columns: 300px;
     grid-template-rows: 100px 110px;
-    grid-template-areas: "image" "text";
+    grid-template-areas: "button" "image" "text";
     border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background: black;
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.9); */
     text-align: center;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10%;
 }
 .card4{
+    display: grid;
     display: grid;
     padding: 2%;
     grid-template-columns: 300px;
     grid-template-rows: 100px 110px;
-    grid-template-areas: "image" "text";
+    grid-template-areas: "button" "image" "text";
     border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background: black;
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.9); */
     text-align: center;
-    margin-top: 5%;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .cards1{
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
+    /* justify-content: space-evenly; */
+    /* margin-left: 2%; */
 }
 .cards2{
     display: flex;
     flex-direction: column;
+    /* margin-left: 2%; */
 }
 .card-image{
     background-image: url('');
@@ -95,5 +194,9 @@
     background-size: auto;
 }
 .card-text{
+    width: 400px;
+    white-space: normal;
+    display: none;
     grid-area: text;
+    position: absolute;
 }
