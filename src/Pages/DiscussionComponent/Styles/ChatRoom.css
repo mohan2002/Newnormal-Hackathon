@@ -1,0 +1,13 @@
+.chat-left{
+    width: 30%;
+    background-color: rgba(192, 185, 185, 0.685);
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-right{
+    width: 70%;
+}

@@ -22,12 +22,13 @@ function RightCard() {
                     EventImage1:doc.data().EventImage1,
                     EventImage2:doc.data().EventImage2,
                     EventLink:doc.data().EventLink,
+                    like:doc.data().like,
                 }))
             )
         })
 
     },[])
-
+console.log(posts);
     
 
     return (
@@ -36,11 +37,7 @@ function RightCard() {
             {posts.map(post => (
             <PostCard post={post}/>
             ))}
-            {/* <PostCard/>
-            <PostCard/>
-            <PostCard/>
-            <PostCard/>
-            <PostCard/> */}
+
 
 
         </ul>
