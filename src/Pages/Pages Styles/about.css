@@ -1,11 +1,12 @@
 .body{
     background-color: url('https://i.pinimg.com/originals/24/01/9b/24019be315c8dafd0d89e483b3749540.jpg');
-    width: 1360px;
-    height: 530px;
+    /* width: 1360px;
+    height: 530px; */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex-grow: 1;
 }
 .body >div{
     padding: 2%;
@@ -13,8 +14,8 @@
 .card1{
     display: grid;
     padding: 2%;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px 110px;
+    /* grid-template-columns: 300px; */
+    /* grid-template-rows   : 100px 110px; */
     grid-template-areas: "button" "image" "text";
     border-radius: 18px;
     background: black;
@@ -73,44 +74,45 @@
     opacity: 0.5;
 }
 .cbutton1{
-    margin-top: 0%;
+    /* margin-top: 0%; */
     display: none;
     grid-area: button;
     width: 100px;
     height: 50px;
     position: absolute;
-    left:20em;
-    top: 15em;
+    /* left:20em;
+    top: 15em; */
 }
 .cbutton2{
-    margin-top: 0%;
+    /* margin-top: 0%; */
     display: none;
     grid-area: button;
     width: 100px;
     height: 50px;
     position: absolute;
-    left:20em;
-    top: 18em;
+    /* left:20em;
+    top: 18em; */
 }
 .cbutton3{
-    margin-top: 0%;
+    /* margin-top: 0%; */
     display: none;
     grid-area: button;
     width: 100px;
     height: 50px;
     position: absolute;
-    left:25em;
-    top: 15em;
+    /* left:25em;
+    top: 15em; */
 }
 .cbutton4{
-    margin-top: 0%;
+    /* margin-top: 0%; */
     display: none;
     grid-area: button;
     width: 100px;
     height: 50px;
+    /* position:relative parent */
     position: absolute;
-    left:25em;
-    top: 18em;
+    /* left:25em;
+    top: 18em; */
 }
 .image1{
     padding: 2%;
@@ -125,10 +127,10 @@
     min-height: 200px;
 }
 .card2{
-    display: grid;
+    /* display: grid; */
     padding: 2%;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px 110px;
+    /* grid-template-columns: 300px;
+    grid-template-rows: 100px 110px; */
     grid-template-areas: "button" "image" "text";
     border-radius: 18px;
     background: black;
@@ -142,10 +144,10 @@
     overflow: hidden;
 }
 .card3{
-    display: grid;
+    /* display: grid; */
     padding: 2%;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px 110px;
+    /* grid-template-columns: 300px;
+    grid-template-rows: 100px 110px; */
     grid-template-areas: "button" "image" "text";
     border-radius: 18px;
     background: black;
@@ -160,11 +162,11 @@
     margin-bottom: 10%;
 }
 .card4{
-    display: grid;
-    display: grid;
+    /* display: grid;
+    display: grid; */
     padding: 2%;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px 110px;
+    /* grid-template-columns: 300px;
+    grid-template-rows: 100px 110px; */
     grid-template-areas: "button" "image" "text";
     border-radius: 18px;
     background: black;
@@ -180,12 +182,15 @@
 .cards1{
     display: flex;
     flex-direction: column;
+    /* width: 200px; */
+    /* flex-grow: 1; */
     /* justify-content: space-evenly; */
     /* margin-left: 2%; */
 }
 .cards2{
     display: flex;
     flex-direction: column;
+    /* flex-grow: 1 ; */
     /* margin-left: 2%; */
 }
 .card-image{
