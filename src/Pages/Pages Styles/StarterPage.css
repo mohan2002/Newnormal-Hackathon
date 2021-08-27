@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
 Body{
     background-color: #f7f7f7;
     background-size:cover; 
@@ -28,7 +30,7 @@ Body{
     background-position: center;
     padding: 35px;
     justify-content: center;
-    border-right:px whitesmoke solid ;;
+    
     
    
 }
@@ -90,8 +92,8 @@ Body{
    padding-right: 0px;
    color: rgba(73,143,221,255);
    font-size: 2em;
-   font-family: 'Pacifico', cursive;
-   text-transform: capitalize;
+   font-family: 'Cabin', sans-serif;
+   text-transform: uppercase;
 }
 
 .wel{
