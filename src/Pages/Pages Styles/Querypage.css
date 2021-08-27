@@ -21,7 +21,7 @@
 }
 
 textarea{
-    width: 41%;
+    width: 55%;
     height: 100px;
     font-size: 1rem;
     padding: 10px;
@@ -38,6 +38,7 @@ textarea ::placeholder{
     color: white;
     font-weight: 900;
     font-size: 1rem;
+    width: 10%;
 }
 
 .query-display{

@@ -29,6 +29,7 @@ function Homepage() {
                         <LeftCard/>
                     </div>
                     <div className="right-card">
+                        {/* <h1>Hello</h1> */}
                         <RightCard/>
                     </div>
                 </div>
