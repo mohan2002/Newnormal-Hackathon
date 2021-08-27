@@ -18,7 +18,7 @@ function LeftCard() {
     return (
         <div className="container">
             <div className="bio">
-                <p className="hello">Hello🖐</p>
+           
                 <img src={user.photoURL} className="img"/>
 
                 <p className="mail">{user.displayName  || user.email}</p>

@@ -37,9 +37,7 @@ function Querycomponent({query}) {
                         <p>{query.Email}</p>
                     </div>
                 </div>
-                <div>
-                    <Link className="query-btn2" to={`/replies/${query.id}`}>REPLIES</Link>
-                </div>
+               
             </div>
 
 
@@ -54,6 +52,10 @@ function Querycomponent({query}) {
                 <textarea className="txt" placeholder="Write your Solutions here" ref={replyref}/>
                 <button className="query-btn1" onClick={ReplyPost} type="reset">POST</button>
             </form>
+
+            <div className="final">
+                    <Link className="query-btn2" to={`/replies/${query.id}`}><div className="linname">VIEW SOLUTIONS</div></Link>
+                </div>
         </div>
     )
 }

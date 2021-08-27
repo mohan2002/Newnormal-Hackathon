@@ -50,6 +50,7 @@
     color: #ffffff;
     font-size: 2rem;
     font-weight: 900;
+    text-transform: capitalize;
 }
 .nav-menu
 {
