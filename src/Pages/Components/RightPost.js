@@ -92,11 +92,15 @@ function RightPost() {
 
             
           <form className="form" onSubmit={post}>
-            <div>
+              <div className="i">
+          
+            <div className="fi">
+                <div>
                 <label>Name:
                 <input type="text" ref={Nameref} required className="txt-box"/>
-                </label>  
-            </div>
+                </label> 
+                </div> 
+            
 
             <div>
                 <label>Event Name:
@@ -130,11 +134,13 @@ function RightPost() {
                 <p>or</p>
                 <input type="file" onChange={filechangehandler} className="custom-file-input txt-box"/>
             </div>
-
+            </div>
+            
+           <div className="sc">
             <div>
                 <label>Category:</label>
             <Combobox>
-                <ComboboxInput aria-labelledby="demo" style={{ width: 300,display:'block',fontFamily:"font-family: 'Montserrat', sans-serif",fontSize:"1rem"}} ref={categoryref}/>
+                <ComboboxInput aria-labelledby="demo" style={{ width: 300,display:'block',fontFamily:"font-family: 'Montserrat', sans-serif",fontSize:"1rem",padding:"4px"}} ref={categoryref}/>
                 <ComboboxPopover>
                 <ComboboxList aria-labelledby="demo">
                     <ComboboxOption value="Python" />
@@ -155,18 +161,21 @@ function RightPost() {
                 </ComboboxPopover>
           </Combobox>
             </div>
-            
+            <div>
             <div className="text-area">
                 <label>Event Link: 
                     <input type="text" ref={linkref} className="txt-box"/>
                 </label>
-                <label>Description:
+                <div><label>Description:
                     <textarea ref={descref} required  className="textarea"/>
-                </label>
+                </label></div>
+                
             </div>
-
+            </div>
            
-            <button className="btn1">Post</button>
+          <div><button className="btn1">Post</button></div>  
+            </div>
+            </div>
             </form>  
         
         } 
