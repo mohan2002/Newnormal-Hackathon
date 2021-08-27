@@ -1,3 +1,10 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+}
 .reply-hero{
     display: flex;
     flex-direction: row;
@@ -43,4 +50,23 @@
 
 .reply-from{
     margin-top: 50px;
+}
+
+.back-btn{
+    background-color: rgb(196, 196, 196);
+    width: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.bck-rply{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+    font-weight: 700;
 }

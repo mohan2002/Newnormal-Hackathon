@@ -1,6 +1,5 @@
 .left-hero{
     width: 90%;
-    background-color: rgba(180, 165, 165, 0.699);
     height: 50px;
     margin-top: 20px;
     display: flex;
@@ -11,6 +10,7 @@
     justify-content: space-between;
     text-decoration: none;
     color: rgb(59, 53, 53);
+    
 }
 
 .left-roomName{

@@ -80,7 +80,7 @@
     width: 15%;
     margin-left: 15px;
     border: none;
-    background-color: transparent;
+    background-color: rgba(99, 209, 223, 0.534);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -92,6 +92,7 @@
     color:rgb(0, 0, 0) ;
    width: 100%;
     border: none;
+
    
     text-align: center;
    height: 100%;
@@ -112,4 +113,10 @@
   background-color: rgba(73,143,221,255) ;
   cursor: pointer;
  
+
+    background-color: rgba(228, 217, 217, 0.664);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+
 }

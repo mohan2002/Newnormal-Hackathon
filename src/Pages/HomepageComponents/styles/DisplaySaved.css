@@ -1,0 +1,70 @@
+.saved-hero{
+    width: 80%;
+    background-color: rgba(209, 209, 209, 0.664);
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.saved-hrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.saved-image{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+.saved-me{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+.saved-bio{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.saved-bio-name{
+    font-size: 1.3rem;
+    width: 100%;
+    font-weight: 800;
+}
+
+.saved-bio-email{
+    font-size: 0.8rem;
+}
+
+
+.saved-desc{
+    width: 50%;
+    margin-left: -100px;
+}
+
+.saved-link{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(192, 185, 185);
+    padding: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.link-event-saved{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 800;
+}

@@ -33,6 +33,7 @@ function DiscussionPage() {
             createdbyimage:user.photoURL,
             createdbyemail:user.email,
         })
+        await firestore.collection("DiscussionRoom").doc(id).collection("chats").add({})
     }
 
     useEffect(() => {
