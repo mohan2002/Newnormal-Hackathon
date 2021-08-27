@@ -21,7 +21,7 @@
 }
 
 textarea{
-    width: 70%;
+    width: 41%;
     height: 100px;
     font-size: 1rem;
     padding: 10px;
@@ -45,4 +45,9 @@ textarea ::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.linname{
+    
+    margin-top: 20px;
 }

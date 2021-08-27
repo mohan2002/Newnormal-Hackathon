@@ -1,10 +1,10 @@
 
 .query-hero{
-    height: 245px;
+    height: 280px;
     width: 50%;
-    background-color: rgba(226, 220, 220, 0.616);
+    background-color: rgb(220,220,220);
     margin-top: 30px;
-    border-radius: 15px;
+    border-radius: 0px 15px 0px 0px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -12,8 +12,10 @@
     height: 20%;
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    margin-top: 10px;
+    background-color: rgba(73,143,221,255);
+    
+    border-radius: 0px 15px 0px 0px;
+    
 }
 
 
@@ -21,15 +23,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 10px;
     width: 90%;
 }
 .name_mail{
     margin-left: 10px;
     font-size: 0.8rem;
+    
 }
 .query-name{
     font-size: 1rem;
     font-weight: 800;
+    color: #fff;
+}
+
+.name_mail p{
+    color:rgb(220,220,220)
 }
 
 
@@ -41,7 +50,7 @@
 
 
 .query-middle{
-    height: 50%;
+    height: 40%;
     padding: 10px;
     display: flex;
 }
@@ -51,7 +60,7 @@
 }
 
 .query-bottom{
-    height: 30%;
+    height: 20%;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
@@ -77,11 +86,30 @@
 }
 
 .query-btn2{
-    padding: 15px;
-    float: left;
-    margin-top: -10px;
+    
+    font-weight: bolder;
+    font-size: 1em;
+    color:rgb(0, 0, 0) ;
+   width: 100%;
     border: none;
-    background-color: rgb(163, 155, 155);
-    border-radius: 10px;
+   
+    text-align: center;
+   height: 100%;
     text-decoration: none;
+}
+
+
+
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color:#fff;
+}
+
+.query-btn2:hover{
+  background-color: rgba(73,143,221,255) ;
+  cursor: pointer;
+ 
 }
