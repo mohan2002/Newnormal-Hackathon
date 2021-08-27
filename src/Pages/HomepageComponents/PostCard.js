@@ -1,17 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import "./styles/Postcard.css"
 import Card from "./Card"
 import me from "../Images/me.png"
 
 import { firestore } from '../Context/firebase/firebase'
-
-import demo from "../Images/demo.jpg"
+import { useAuth } from '../Context/AuthContext'
+import firebase from 'firebase'
 
 
 function PostCard({post}) {
     const [like,setLike] = useState(false)
     const [count,setCount] = useState()
     const [save,setSave] = useState(false)
+    
+    const {currentUser} = useAuth()
+    const [user,setUser] = useState([])
+    useEffect(() => {
+        {currentUser 
+            && 
+            setUser(currentUser)
+        }
+    },[currentUser])
+
+    console.log(user);
+
     const  generate = () => {
         setLike(true)
         firestore.collection("postsDatabase").doc(post.id).set({
@@ -21,7 +33,11 @@ function PostCard({post}) {
     }
 
     const savePost = () => {
-        console.log("hlo");
+        setSave(true)
+        firestore.collection(user.email).doc(post.id).set({
+            id:post.id,
+            timeStamp:firebase.firestore.FieldValue.serverTimestamp(),
+        })
     }
 
     return (
@@ -49,7 +65,7 @@ function PostCard({post}) {
                     <div className="top">
                         <div className="event-desc">
                             <div className="event-name">
-                                <p className="n">Event Name HELLO : </p>
+                                <p className="n">Event Name: </p>
                                 <p className="m">{post.EventName}</p>
                             </div>
                             <div className="event-name">

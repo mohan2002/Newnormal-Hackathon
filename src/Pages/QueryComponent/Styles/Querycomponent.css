@@ -71,7 +71,7 @@
     width: 15%;
     margin-left: 15px;
     border: none;
-    background-color: transparent;
+    background-color: rgba(99, 209, 223, 0.534);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -81,7 +81,8 @@
     float: left;
     margin-top: -10px;
     border: none;
-    background-color: rgb(163, 155, 155);
+    background-color: rgba(228, 217, 217, 0.664);
     border-radius: 10px;
     text-decoration: none;
+    color: black;
 }
