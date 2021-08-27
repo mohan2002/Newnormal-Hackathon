@@ -27,7 +27,7 @@ function Navigation() {
                 <div className="nav-container">
                     <Link className="nav-logo" to="/homepage">
                         <img src={logo} className="log"></img>
-                        <h1>EVENT HUB</h1>
+                        <h1>Event Hub</h1>
                     </Link>
                     
                     <ul className={click ? "nav-menu active" : "nav-menu"}>

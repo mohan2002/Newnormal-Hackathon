@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+.card{
+    /* max-width: 700px; */
+    font-family: 'Lato', sans-serif;
+}
+
 .item{
     width: 50%;
     list-style-type: none;
@@ -12,6 +18,8 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    color: #fff;
+    border-radius: 0px 20px 0px 0px;
 }
 
 
@@ -21,7 +29,7 @@
     justify-content: start;
     font-size: 0.7rem;
     align-items: center;
-    width: 60%;
+    width: 100%;
 }
 
 .me{
@@ -40,12 +48,13 @@
     font-weight: 700;
 }
 .name-email p{
-    color: rgb(41, 37, 37);
+    color: rgb(220,220,220);
 }
 
 .right{
     width: 40%;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .cat{
@@ -56,71 +65,122 @@
 
 .Overview{
     display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+    background-color: rgb(220,220,220);
+   
+}
+
+.top{
+    width: 80%;
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .event-desc{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
     margin-bottom: 5px;
+   color: rgba(73,143,221,255);
+   margin-bottom: 10PX;
 }
+
 
 .event-name{
     display: flex;
     flex-direction: row;
 }
-.n{
+.n {
     font-weight: 700;
     margin-right: 10px;
+    text-transform: capitalize;
     margin-bottom: 5px;
 }
+.event-name p{
+    text-transform: capitalize;
+}
 .image{
-    width: 100%;
-    height: 200px;
-    object-fit:cover;
+    max-width: 320px;
+    height: 320px;
+    object-fit:fill;
 }
 
+.image img{
+   
+    padding-left: 40px;
+    
+}
 
 .bottom{
     display: flex;
-    flex-direction: column;
+    width: 60%;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -8px;
+  
+    
 }
+
+
 
 .a{
     width: 100%;
     display: flex;
+    color: rgb(206, 37, 37);
+    text-transform: uppercase;
     flex-direction: row;
     font-weight: 700;
     justify-content: space-around;
+    text-align: center;
+    
 }
-
+.link-part button:hover{
+    background-color: rgba(73, 143, 221,255);
+    color: #fff;
+}
 .link-part{
     width: 100%;
     padding: 6px;
-    margin-top: 2px;
-    background-color: rgb(214, 207, 207);
+    margin-top: 20px;
+   
+    /* margin-left: 50px; */
+ 
+}
+.link-part button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(167, 163, 163, 0.452);
 }
 .link-part a{
     text-decoration: none;
     font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
 }
 .like-comment{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
+    border-radius: 0px 0px 15px 15px;
+   
 }
 
+.like-comment .like{
+    border-radius: 0px 0px 15px 15px;
+}
 
 .like-comment div{
     width: 50%;
     text-align: center;
+    
     padding: 10px;
-    background-color: inherit;
+    background-color: rgb(207, 193, 193);
     border:none;
+    
     outline: none;
     
 }

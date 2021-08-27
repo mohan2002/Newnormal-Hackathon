@@ -1,3 +1,10 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+}
 .part{
     width: 100%;
     display: flex;
@@ -5,11 +12,11 @@
 }
 
 .left-card
-{
-    width: 30%;
+{ 
+   width: 20%;
 }
 .right-card{
-    width: 70%;
+    width: 80%;
 }
 
 @media all and (max-width:800px){

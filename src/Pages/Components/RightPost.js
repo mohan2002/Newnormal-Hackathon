@@ -68,6 +68,7 @@ function RightPost() {
            Description:descref.current.value,
            EventLink:linkref.current.value,
            EventDate:moment(selectedDate).format('MMMM Do YYYY, h:mm:ss a'),
+           like:0,
        })
       
        history.push("/homepage")
@@ -93,13 +94,13 @@ function RightPost() {
           <form className="form" onSubmit={post}>
             <div>
                 <label>Name:
-                <input type="text" ref={Nameref} required/>
+                <input type="text" ref={Nameref} required className="txt-box"/>
                 </label>  
             </div>
 
             <div>
                 <label>Event Name:
-                <input type="text" ref={eventref} required/>
+                <input type="text" ref={eventref} required className="txt-box"/>
                 </label>
             </div>
             
@@ -119,7 +120,7 @@ function RightPost() {
            
             <div>
                 <label>Image url:
-                      <input type="text" ref={imageref} />
+                      <input type="text" ref={imageref} className="txt-box" />
                 </label>
             </div>
            
@@ -127,7 +128,7 @@ function RightPost() {
 
             <div className="center">
                 <p>or</p>
-                <input type="file" onChange={filechangehandler} className="custom-file-input"/>
+                <input type="file" onChange={filechangehandler} className="custom-file-input txt-box"/>
             </div>
 
             <div>
@@ -157,10 +158,10 @@ function RightPost() {
             
             <div className="text-area">
                 <label>Event Link: 
-                    <input type="text" ref={linkref}/>
+                    <input type="text" ref={linkref} className="txt-box"/>
                 </label>
                 <label>Description:
-                    <textarea ref={descref} required/>
+                    <textarea ref={descref} required  className="textarea"/>
                 </label>
             </div>
 

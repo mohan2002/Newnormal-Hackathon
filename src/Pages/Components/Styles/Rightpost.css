@@ -25,7 +25,7 @@
     margin: 0.5em 0;
   }
 
-  input {
+.txt-box{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -38,7 +38,7 @@
   .im{
     color: rgba(73,143,221,255);  
   }
-  textarea{
+  .textarea{
     display: flex;
     flex-direction: column;
     width: 100%;

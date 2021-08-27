@@ -1,0 +1,22 @@
+.left-hero{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(59, 53, 53);
+    
+}
+
+.left-roomName{
+    font-size: 1.5rem;
+}
+
+.left-hero i{
+    font-size: 1.5rem;
+}
