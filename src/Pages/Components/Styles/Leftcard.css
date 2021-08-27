@@ -46,11 +46,11 @@
     font-weight: 600;
     width: 100%;
     margin-bottom: 10px;
-    background-color: rgb(218, 199, 199);
+    background-color: rgb(196, 196, 196);
     cursor: pointer;
     text-decoration: none;
 }
 
 .bottom-part:hover{
-    background-color: rgb(193, 226, 193);
+    background-color: rgb(216, 216, 216);
 }

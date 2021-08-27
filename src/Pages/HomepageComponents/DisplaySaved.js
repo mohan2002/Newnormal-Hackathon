@@ -30,7 +30,7 @@ function DisplaySaved({saved}) {
                 </div>
 
                 <div className="saved-link">
-                    <a href={display.EventLink} className="link-event-saved">EVENT LINK</a>
+                    <a href={display.EventLink} className="link-event-saved" target="_blank">EVENT LINK</a>
 
                 </div>
 

@@ -93,7 +93,7 @@
    width: 100%;
     border: none;
 
-   
+   background-color: rgb(206, 201, 201);
     text-align: center;
    height: 100%;
     text-decoration: none;
@@ -110,12 +110,10 @@
 }
 
 .query-btn2:hover{
-  background-color: rgba(73,143,221,255) ;
   cursor: pointer;
  
 
     background-color: rgba(228, 217, 217, 0.664);
-    border-radius: 10px;
     text-decoration: none;
     color: black;
 
