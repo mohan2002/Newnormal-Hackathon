@@ -1,3 +1,5 @@
+
+
 import React, { useState ,useEffect} from 'react'
 import "./styles/Postcard.css"
 import Card from "./Card"
@@ -110,3 +112,6 @@ function PostCard({post}) {
 }
 
 export default PostCard
+
+
+

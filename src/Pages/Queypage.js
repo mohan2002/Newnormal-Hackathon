@@ -6,7 +6,7 @@ import firebase from "./Context/firebase/firebase"
 import { auth } from './Context/firebase/firebase'
 import { useAuth } from './Context/AuthContext'
 import Querycomponent from './QueryComponent/Querycomponent'
-import FadeLoader from "react-spinners/FadeLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 
 function Queypage() {
@@ -67,7 +67,7 @@ function Queypage() {
     return (
         <div className={loading && "header"}>
              {
-                loading ?  <FadeLoader color={"black"} loading={loading} size={20}  />
+                loading ?  <PropagateLoader color={"black"} loading={loading} size={20}  />
 
                 :
             <div className="query-container">
@@ -75,10 +75,10 @@ function Queypage() {
 
 
 
-                <div className="query-content">
-                    <textarea type="query-txt" ref={inputref} placeholder="Enter your problem to get answer"/>
+                <form className="query-content">
+                    <textarea type="query-txt" ref={inputref} placeholder="Enter your problem to get answer" required/>
                     <button onClick={sb} className="query-btn">POST</button>
-                </div>
+                </form>
 
                 <div className="query-display">
 

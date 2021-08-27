@@ -13,7 +13,7 @@ function StarterPage() {
             history.push("/homepage")
         }
         catch{
-            alert("Hey")
+            alert("Hey You need to Sign in first")
         }
     }
     async function gitlogin(){
@@ -56,13 +56,13 @@ function StarterPage() {
                      </div>
                      <div class="lo">
                      <button class="ad1" onClick={GoogleLogin}></button>
-                     <div class="dd"> LOGIN WITH GOOGLE</div>
+                     <button class="dd" onClick={GoogleLogin}> LOGIN WITH GOOGLE</button>
                     
                      </div>
                     
                      <div class="lo">
                      <button class="ad"  onClick={gitlogin}></button>
-                     <div class="dd"> LOGIN WITH GITHUB</div>
+                     <button class="dd" onClick={gitlogin}>LOGIN WITH GITHUB</button>
                     
                      </div>
                      
