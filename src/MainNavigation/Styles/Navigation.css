@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
 .navbar{
     background-color:rgba(73,143,221,255);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a17676' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");    
@@ -11,7 +11,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Cabin', sans-serif;
    max-width: 100%;
     box-shadow: 0px 10px 10px -15px black;
 }
@@ -46,7 +46,7 @@
 }
 .nav-logo h1{
     margin-left: 20px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Courgette', cursive;
     color: #ffffff;
     font-size: 2rem;
     font-weight: 900;
