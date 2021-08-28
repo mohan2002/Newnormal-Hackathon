@@ -1,120 +1,114 @@
-
-.query-hero{
-    height: 280px;
-    width: 50%;
-    background-color: rgb(220,220,220);
-    margin-top: 30px;
-    border-radius: 0px 15px 0px 0px;
-    font-family: 'Lato', sans-serif;
+.query-hero {
+  height: 280px;
+  width: 50%;
+  background-color: whitesmoke;
+  margin-top: 50px;
+  border-radius: 0px 15px 0px 0px;
+  font-family: "Lato", sans-serif;
 }
 
-.query-top{
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(73,143,221,255);
-    
-    border-radius: 0px 15px 0px 0px;
-    
+.query-top {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(73, 143, 221, 255);
+
+  border-radius: 0px 15px 0px 0px;
 }
 
-
-.query-bio{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-    width: 90%;
+.query-bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  width: 90%;
 }
-.name_mail{
-    margin-left: 10px;
-    font-size: 0.8rem;
-    
+.name_mail {
+  margin-left: 10px;
+  font-size: 0.8rem;
 }
-.query-name{
-    font-size: 1rem;
-    font-weight: 800;
-    color: #fff;
+.query-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
 }
 
-.name_mail p{
-    color:rgb(220,220,220)
+.name_mail p {
+  color: rgb(220, 220, 220);
 }
 
-
-.query-img{
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
+.query-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
 }
 
-
-.query-middle{
-    height: 40%;
-    padding: 10px;
-    display: flex;
+.query-middle {
+  height: 40%;
+  padding: 10px;
+  display: flex;
 }
 
-.query-middle-content{
-    text-indent: 40px;
+.query-middle-content {
+  text-indent: 40px;
 }
 
-.query-bottom{
-    height: 20%;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
+.query-bottom {
+  height: 20%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-.txt{
-    height: 100%;
-    width: 80%;
-    margin-top: -25px;
-    background-color: rgb(207, 204, 204);
-    font-size: 1rem;
+.txt {
+  height: 100%;
+  width: 80%;
+  margin-top: -25px;
+  background-color: rgb(240, 240, 240);
+  font-size: 1rem;
+  border-radius: 10px;
 }
 
-.query-btn1{
-    margin-top: -25px;
-    height: 100%;
-    width: 15%;
-    margin-left: 15px;
-    border: none;
-    background-color: rgba(99, 209, 223, 0.534);
-    font-size: 1.5rem;
-    font-weight: 600;
+.query-btn1 {
+  margin-top: -25px;
+  height: 100%;
+  width: 15%;
+  margin-left: 15px;
+  border: none;
+  background-color: rgb(18, 142, 243);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 25px;
+  width: 25%;
 }
 
-.query-btn2{
-    
-    font-weight: bolder;
-    font-size: 1em;
-    color:rgb(0, 0, 0) ;
-   width: 100%;
-    border: none;
+.query-btn2 {
+  font-weight: bolder;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  border: none;
+  color: white;
 
-   background-color: rgb(206, 201, 201);
-    text-align: center;
-   height: 100%;
-    text-decoration: none;
+  background-color: rgba(18, 142, 243, 0.781);
+  text-align: center;
+  height: 100%;
+  text-decoration: none;
 }
 
-
-
-.final{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-    background-color:#fff;
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: #fff;
 }
 
-.query-btn2:hover{
+.query-btn2:hover {
   cursor: pointer;
- 
 
-    background-color: rgba(228, 217, 217, 0.664);
-    text-decoration: none;
-    color: black;
-
+  background-color: rgba(228, 217, 217, 0.664);
+  text-decoration: none;
+  color: black;
 }

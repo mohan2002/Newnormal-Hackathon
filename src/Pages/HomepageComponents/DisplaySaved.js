@@ -5,12 +5,13 @@ import { firestore } from '../Context/firebase/firebase';
 
 function DisplaySaved({saved}) {
     const [display,setDisplay] = useState([])
-    console.log(saved);
 
     useEffect(() =>{
         firestore.collection("postsDatabase").doc(saved.id).get().then(snapshot =>setDisplay(snapshot.data()))
     },[])
-
+    function handleDelete(){
+        firestore.collection(saved.email).doc(saved.document_id).delete()
+    }
     return (
         <div className="saved-hero">
 
@@ -31,9 +32,12 @@ function DisplaySaved({saved}) {
 
                 <div className="saved-link">
                     <a href={display.EventLink} className="link-event-saved" target="_blank">EVENT LINK</a>
-
+                    
                 </div>
-
+                <div className="delete-saved" onClick={handleDelete}>
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+                
             </div>
             
         </div>

@@ -11,6 +11,7 @@ import Addposts from './Pages/Addposts'
 import ReplyfromQuery from './Pages/QueryComponent/ReplyfromQuery';
 import ChatRooms from './Pages/DiscussionComponent/ChatRooms';
 import Savedposts from './Pages/HomepageComponents/Savedposts';
+import Profile from './Pages/ProfileComponent/Profile';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
             <Route path="/about" component={About}/>
             <Route path="/add" component={Addposts}/>
             <Route path="/savedposts/:email" component={Savedposts}/>
+            <Route path="/profile" component={Profile}/>
+
             <Route path="/replies/:id">
               <ReplyfromQuery/>
             </Route>

@@ -4,9 +4,6 @@
     flex-direction: column;
     justify-content: space-between;
     color: rgb(49, 47, 47);
-    /* position: fixed;
-    background-color: rgba(180, 165, 165, 0.699);
-    width: 30%; */
 }
 .demo-room-name{
     text-align: center;
@@ -51,10 +48,11 @@
     font-weight: 800;
 }
 
-.bck{
+.bck__1{
     color: black;
     text-decoration: none;
     background-color: rgb(185, 179, 179);
     margin-top: 40px;
     border-radius: 10px;
+    padding: 10px;
 }
