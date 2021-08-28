@@ -1,9 +1,7 @@
 {
-<<<<<<< HEAD
-  "homepage": "http://adarsh1445.github.io/Newnormal-Hackathon",
-=======
-  "homepage": "http://mohan2002.github.io/Newnormal-Hackathon",
->>>>>>> ea7b93b8f97e765f24b9e42e9fbe2143366840a1
+
+  "homepage": "http://mohan2002.github.io/Newnormal-Hackathon/blob/master/src/Pages/StarterPage.js",
+
   "name": "hackathon1_team",
   "version": "0.1.0",
   "private": true,
@@ -49,10 +47,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",  
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
