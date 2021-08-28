@@ -69,7 +69,8 @@
     flex-direction: row;
     padding: 50px;
     justify-content: space-evenly;
-    background-color: rgb(220,220,220);
+    background-color: rgba(235, 217, 217, 0.753);
+
    
 }
 

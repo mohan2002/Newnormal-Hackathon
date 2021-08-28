@@ -4,9 +4,6 @@
     flex-direction: column;
     justify-content: space-between;
     color: rgb(49, 47, 47);
-    /* position: fixed;
-    background-color: rgba(180, 165, 165, 0.699);
-    width: 30%; */
 }
 .demo-room-name{
     text-align: center;

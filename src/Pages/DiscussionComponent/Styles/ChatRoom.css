@@ -13,7 +13,7 @@
 
 .chat-left{
     width: 30%;
-    background-color: rgba(192, 185, 185, 0.685);
+    background-color: #dfe3ee;
     height: 87vh;
     display: flex;
     flex-direction: row;

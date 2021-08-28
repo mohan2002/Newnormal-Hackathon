@@ -7,6 +7,7 @@
     justify-content: center;
     overflow: hidden;
     flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 .body >div{
     padding: 2%;
