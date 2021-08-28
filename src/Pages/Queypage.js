@@ -17,7 +17,6 @@ function Queypage() {
     const [queries,setQueries] = useState([])
 
     const [loading, setLoading] = useState(false)
-
     useEffect(() =>{
         setLoading(true)
         setTimeout(() =>{

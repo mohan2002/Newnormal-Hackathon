@@ -68,3 +68,7 @@
     color: black;
     font-weight: 800;
 }
+
+.delete-saved{
+    margin-left: -1px;
+}

@@ -16,7 +16,9 @@ function Savedposts() {
             await firestore.collection(params.email).onSnapshot(snapshot => {
                 setSaveddata(
                     snapshot.docs.map(doc => ({
-                        id:doc.data().id
+                        document_id:doc.id,
+                        id:doc.data().id,
+                        email:params.email,
                     }))
                 )
             })

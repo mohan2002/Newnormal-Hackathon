@@ -14,7 +14,7 @@ function LeftPartChat({details}) {
                 <h1 className="demo-created-name">{details.createdbyname}</h1>
                 <img src={details.createdbyimage} className="demo-created-img"></img>
                 <p className="demo-created-mail">{details.createdbyemail}</p>
-                <Link className="bck" to="/discussion">BACK</Link>
+                <Link className="bck__1" to="/discussion">BACK</Link>
             </div>
 
 

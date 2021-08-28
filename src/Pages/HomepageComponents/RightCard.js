@@ -7,6 +7,8 @@ import moment from 'moment'
 function RightCard() {
     const [posts,setPosts] = useState([])
 
+
+
     useEffect(() => {
         firestore.collection("postsDatabase").orderBy('timeStamp',"desc").onSnapshot(snapshot => {
             setPosts(
@@ -28,7 +30,6 @@ function RightCard() {
         })
 
     },[])
-console.log(posts);
     
 
     return (

@@ -8,6 +8,7 @@ import me from "../Images/me.png"
 import { firestore } from '../Context/firebase/firebase'
 import { useAuth } from '../Context/AuthContext'
 import firebase from 'firebase'
+import moment from 'moment'
 
 
 function PostCard({post}) {
@@ -24,7 +25,6 @@ function PostCard({post}) {
         }
     },[currentUser])
 
-    console.log(user);
 
     const  generate = () => {
         setLike(true)
@@ -42,8 +42,76 @@ function PostCard({post}) {
         })
     }
 
+    let date = moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')
+    // console.log(date);
+    const condition = date <= post.EventDate ? true : false
+
+    var gapi = window.gapi
+    var CLIENT_ID = "136984819570-bs0mcklebb7l2peqnlhcbjvib261mk0i.apps.googleusercontent.com"
+    var API_KEY = "AIzaSyCYGxCQQtEhqsvFB4kIdGYeUs1kDiPXyqw"
+    var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+    var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+
+
+    function saveEventDate(){
+        gapi.load('client:auth2',() => {
+            console.log("loaded client");
+
+            gapi.client.init({
+                apikey:API_KEY,
+                clientId:CLIENT_ID,
+                discoveryDocs:DISCOVERY_DOCS,
+                scope:SCOPES
+            })
+
+            gapi.client.load('calender', 'v1', () => console.log("Bam!"))
+
+            gapi.auth2.getAuthInstance().signIn()
+            .then(() => {
+                
+                var event = {
+                    'summary': `${post.EventName}`,
+                    'location': 'online',
+                    'description': `${post.Description}`,
+                    'start': {
+                    'dateTime': `${post.EventDate}`,
+                    'timeZone': 'India/Calcutta'
+                    },
+                    'end': {
+                        'dateTime': `${post.EventDate}`,
+                        'timeZone': 'India/Calcutta'
+                    },
+                    'recurrence': [
+                    'RRULE:FREQ=DAILY;COUNT=2'
+                    ],
+                    'attendees': [
+                    {'email': 'lpage@example.com'},
+                    {'email': 'sbrin@example.com'}
+                    ],
+                    'reminders': {
+                    'useDefault': false,
+                    'overrides': [
+                        {'method': 'email', 'minutes': 24 * 60},
+                        {'method': 'popup', 'minutes': 10}
+                    ]
+                    }
+                };
+
+                var request = gapi.client.calender.events.insert({
+                    'calenderID': 'primary',
+                    'resource': event,
+                })
+                request.execute(event => {
+                    window.open(event.htmlLink)
+                })
+            })
+        })
+    }
+
     return (
         <li className="item">
+            {
+                condition && 
             
             <Card>
                 <div className="banner">
@@ -79,7 +147,7 @@ function PostCard({post}) {
                             </div>    
                         </div>
                         <div className="a">
-                            <p>{post.EventDate}</p>
+                            <p onClick={saveEventDate}>{post.EventDate}</p>
                         </div>
                         <div className="link-part">
                            <button><a className="Link" href={post.EventLink} target="_blank">Link</a></button> 
@@ -107,6 +175,7 @@ function PostCard({post}) {
            
        
             </Card>
+}
         </li>
     )
 }
