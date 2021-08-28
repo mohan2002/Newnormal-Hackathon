@@ -75,7 +75,7 @@ function Queypage() {
 
 
                 <form className="query-content">
-                    <textarea type="query-txt" ref={inputref} placeholder="Enter your problem to get answer" required/>
+                    <textarea type="query-txt" ref={inputref} placeholder="Any Questions?" required/>
                     <button onClick={sb} className="query-btn">POST</button>
                 </form>
 
