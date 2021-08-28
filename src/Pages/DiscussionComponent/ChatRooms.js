@@ -81,7 +81,7 @@ function ChatRooms() {
                 
                 <div className="chat-right">
                     <form className="form-reply" onSubmit={handleSubmit}>
-                        <input className="reply-input" value={message} onChange={(e) =>{setMessage(e.target.value)}} placeholder="TYPE YOUR MESSAGE HERE"/>
+                        <input className="reply-input" value={message} onChange={(e) =>{setMessage(e.target.value)}} placeholder="TYPE YOUR MESSAGE HERE" required/>
                         <button className="reply-btn">SEND🚀</button>
                     </form>
 

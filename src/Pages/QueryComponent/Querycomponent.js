@@ -7,7 +7,8 @@ import { auth } from '../Context/firebase/firebase';
 import { useAuth } from '../Context/AuthContext';
 function Querycomponent({query}) {
 
-    const replyref = useRef()
+    // const replyref = useRef()
+    const [replyref,setReplyref] = useState("")
      const {currentUser} = useAuth()
      const [user,setUser] = useState([])
      useEffect(() => {
@@ -17,9 +18,10 @@ function Querycomponent({query}) {
         }
     },[currentUser])
 
-    async function ReplyPost(){
+    async function ReplyPost(e){
+        e.preventDefault()
         await firestore.collection("query-part").doc(query.id).collection("replies").add({
-            reply: replyref.current.value,
+            reply: replyref,
             Email: user.email,
             Photo:user.photoURL,
             Name:user.displayName,
@@ -48,9 +50,9 @@ function Querycomponent({query}) {
             </div>
 
 
-            <form className="query-bottom">
-                <textarea className="txt" placeholder="Write your Solutions here" ref={replyref}/>
-                <button className="query-btn1" onClick={ReplyPost} type="reset">POST</button>
+            <form className="query-bottom" onSubmit={ReplyPost}>
+                <textarea className="txt" placeholder="Write your Solutions here" value={replyref} onChange={e => {setReplyref(e.target.value)}} required/>
+                <button className="query-btn1"  type="reset" >POST</button>
             </form>
 
             <div className="final">
