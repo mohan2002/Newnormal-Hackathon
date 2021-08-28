@@ -21,7 +21,7 @@ class About extends Component {
             // opacity:0.5,
         },1000,)
         $('.image2').hide()
-        $('.cbutton1').show(1000)
+        $('.cbutton1').show(1000);
         $('.card2').hide(); 
         $('.card3').hide();
         $('.card4').hide()
@@ -111,7 +111,6 @@ class About extends Component {
         return (
             <>
                 <Navigation/>   
-                <h1><center>About</center></h1>
                 <div className="body">
                     <div className="cards1">
                         <div className="card1" onClick={this.animatecard1}>
@@ -158,11 +157,12 @@ class About extends Component {
                         </div>
                         <div className="card4" onClick={this.animatecard4}>
                             <img className="image2" src="https://t3.ftcdn.net/jpg/03/64/89/04/360_F_364890441_7shzRuvH4jxbEUhpv4yHoXntHrMCbYxY.jpg"/>
-                            <h2 className="abt4">How it Helps</h2>
+                            <h2 className="abt4">THE STORY BEHIND</h2>
                             <img className="image1" src="https://media3.giphy.com/media/iJ0uMmH42ghycmSRRV/giphy.gif" alt="Snow"/>
                             <button className="cbutton4" onClick={this.refreshPage}>Back</button>
                             <div className="card-text">
-                                
+                                We are a gruop of four studying together,we had a lot of problems while going through different fields of study and we also had a need to discuss about it and only then this idea for both query and discussion which we 
+                                added in our website came in..however the main aim of our website is posting events and users getting benefitted with it. 
                             </div>
                         </div>
                     </div>
