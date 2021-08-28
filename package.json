@@ -1,4 +1,5 @@
 {
+  "homepage": "http://mohan2002.github.io/Newnormal-Hackathon",
   "name": "hackathon1_team",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,7 @@
     "firebase": "^8.10.0",
     "firebase-tools": "^9.16.5",
     "flatpickr": "^4.6.9",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
@@ -43,6 +45,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
