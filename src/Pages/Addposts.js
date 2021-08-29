@@ -37,14 +37,6 @@ function Addposts() {
                                 </ul>
                             </div>
                             
-                            <div className="second">
-                                <h1 className="head">Disclaimar</h1>
-                                <ul className="second-content">
-                                    <li>As a kind request.Dont spam the content</li>
-                                    <li>Dont enter wrong contents. Please enter Correct details</li>
-                                </ul>
-                            </div>
-                            
                         </div>
 
 

@@ -7,7 +7,7 @@
 .discussion-left{
     width: 30%;
     height: 87vh;
-    background-color: rgba(235, 217, 217, 0.753);
+    background-color: #dfe3ee;
     display: flex;
     flex-direction: column;
     align-items: center;

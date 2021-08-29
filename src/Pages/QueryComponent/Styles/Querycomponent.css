@@ -2,7 +2,7 @@
   height: 280px;
   width: 50%;
   background-color: whitesmoke;
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: 0px 15px 0px 0px;
   font-family: "Lato", sans-serif;
 }
@@ -64,8 +64,9 @@
   height: 100%;
   width: 80%;
   margin-top: -25px;
-  background-color: rgb(207, 204, 204);
+  background-color: rgb(240, 240, 240);
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 .query-btn1 {
@@ -90,7 +91,7 @@
   border: none;
   color: white;
 
-  background-color: rgb(18, 142, 243);
+  background-color: rgba(18, 142, 243, 0.781);
   text-align: center;
   height: 100%;
   text-decoration: none;

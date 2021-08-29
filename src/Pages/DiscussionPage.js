@@ -8,8 +8,9 @@ import { useAuth } from './Context/AuthContext'
 
 function DiscussionPage() {
 
-    const roomName = useRef()
+    // const roomName = useRef()
     const [rooms,setRooms] = useState([])
+    const [roomName,setRoomName] = useState("")
 
 
     const {currentUser} = useAuth()
@@ -27,13 +28,14 @@ function DiscussionPage() {
         e.preventDefault()
         const id = firebase.firestore().collection('DiscussionRoom').doc().id
         await firestore.collection("DiscussionRoom").doc(id).set({
-            Roomname:roomName.current.value,
+            Roomname:roomName,
             timeStamp:firebase.firestore.FieldValue.serverTimestamp(),
             createdbyname:user.displayName,
             createdbyimage:user.photoURL,
             createdbyemail:user.email,
         })
         await firestore.collection("DiscussionRoom").doc(id).collection("chats").add({})
+        setRoomName("")
     }
 
     useEffect(() => {
@@ -63,7 +65,9 @@ function DiscussionPage() {
                 
                 <form className="discussion-right" onSubmit={CreateRoom}>
                     <h1>Create chat rooms on your own!</h1>
-                    <input type="text" className="room-name" placeholder="CHAT ROOM NAME" ref={roomName} required/>
+                    <input type="text" className="room-name" placeholder="CHAT ROOM NAME" value={roomName} onChange={(e)=>{
+                        setRoomName(e.target.value)
+                    }} required/>
                     <button className="room-submit">CREATE</button>
                 </form>
             </div>        

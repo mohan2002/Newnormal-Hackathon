@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@571&display=swap");
 Body {
-  background-color: rgb(12, 183, 250);
   background-size: cover;
   max-width: 1440px;
   font-family: "Lato", sans-serif;
 }
 .row {
+  background-color: rgb(12, 183, 250);
   display: flex;
   flex-direction: row;
   align-items: center;
