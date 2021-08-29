@@ -52,7 +52,7 @@ function Querycomponent({query}) {
 
             <form className="query-bottom" onSubmit={ReplyPost}>
                 <textarea className="txt" placeholder="Write your Solutions here" value={replyref} onChange={e => {setReplyref(e.target.value)}} required/>
-                <button className="query-btn1"  type="reset" >POST</button>
+                <button className="query-btn1">POST</button>
             </form>
 
             <div className="final">
