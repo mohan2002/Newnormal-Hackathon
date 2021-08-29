@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Newnormal-Hackathon/static/css/main.6f01586b.chunk.css",
-    "main.js": "/Newnormal-Hackathon/static/js/main.f3c47448.chunk.js",
-    "main.js.map": "/Newnormal-Hackathon/static/js/main.f3c47448.chunk.js.map",
+    "main.css": "/Newnormal-Hackathon/static/css/main.533df11f.chunk.css",
+    "main.js": "/Newnormal-Hackathon/static/js/main.333ee81f.chunk.js",
+    "main.js.map": "/Newnormal-Hackathon/static/js/main.333ee81f.chunk.js.map",
     "runtime-main.js": "/Newnormal-Hackathon/static/js/runtime-main.f491cf6a.js",
     "runtime-main.js.map": "/Newnormal-Hackathon/static/js/runtime-main.f491cf6a.js.map",
     "static/css/2.8d682a32.chunk.css": "/Newnormal-Hackathon/static/css/2.8d682a32.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.e05c7309.chunk.js.map": "/Newnormal-Hackathon/static/js/3.e05c7309.chunk.js.map",
     "index.html": "/Newnormal-Hackathon/index.html",
     "static/css/2.8d682a32.chunk.css.map": "/Newnormal-Hackathon/static/css/2.8d682a32.chunk.css.map",
-    "static/css/main.6f01586b.chunk.css.map": "/Newnormal-Hackathon/static/css/main.6f01586b.chunk.css.map",
+    "static/css/main.533df11f.chunk.css.map": "/Newnormal-Hackathon/static/css/main.533df11f.chunk.css.map",
     "static/js/2.360249a2.chunk.js.LICENSE.txt": "/Newnormal-Hackathon/static/js/2.360249a2.chunk.js.LICENSE.txt",
     "static/media/Group 1.7dfa85ee.png": "/Newnormal-Hackathon/static/media/Group 1.7dfa85ee.png",
     "static/media/StarterPage.css": "/Newnormal-Hackathon/static/media/header3.b458a3d9.gif"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.f491cf6a.js",
     "static/css/2.8d682a32.chunk.css",
     "static/js/2.360249a2.chunk.js",
-    "static/css/main.6f01586b.chunk.css",
-    "static/js/main.f3c47448.chunk.js"
+    "static/css/main.533df11f.chunk.css",
+    "static/js/main.333ee81f.chunk.js"
   ]
 }
