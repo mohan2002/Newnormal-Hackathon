@@ -56,8 +56,3 @@ textarea ::placeholder {
 .linname {
   margin-top: 20px;
 }
-
-#root > div > div > div > div > form > button {
-  border-radius: 25px;
-  height: 15px;
-}
